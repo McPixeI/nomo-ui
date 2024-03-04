@@ -6853,6 +6853,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"globrex@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "globrex@npm:0.1.2"
+  checksum: 10c0/a54c029520cf58bda1d8884f72bd49b4cd74e977883268d931fd83bcbd1a9eb96d57c7dbd4ad80148fb9247467ebfb9b215630b2ed7563b2a8de02e1ff7f89d1
+  languageName: node
+  linkType: hard
+
 "gopd@npm:^1.0.1":
   version: 1.0.1
   resolution: "gopd@npm:1.0.1"
@@ -8474,6 +8481,7 @@ __metadata:
     tailwindcss: "npm:^3.4.1"
     typescript: "npm:^5.2.2"
     vite: "npm:^5.1.4"
+    vite-tsconfig-paths: "npm:^4.3.1"
   languageName: unknown
   linkType: soft
 
@@ -10545,6 +10553,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tsconfck@npm:^3.0.1":
+  version: 3.0.2
+  resolution: "tsconfck@npm:3.0.2"
+  peerDependencies:
+    typescript: ^5.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  bin:
+    tsconfck: bin/tsconfck.js
+  checksum: 10c0/8489244d9e8c0ed4e32b3f5b26151e2ea4204d2c8dd5ed770a8d892b4fba3ba415f4cd3ae9bed4f245d4426de0477bc11fbbce287ba1adfaa1fa0d4e7bae252e
+  languageName: node
+  linkType: hard
+
 "tslib@npm:^1.13.0, tslib@npm:^1.8.1":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
@@ -10923,6 +10945,22 @@ __metadata:
   version: 1.1.2
   resolution: "vary@npm:1.1.2"
   checksum: 10c0/f15d588d79f3675135ba783c91a4083dcd290a2a5be9fcb6514220a1634e23df116847b1cc51f66bfb0644cf9353b2abb7815ae499bab06e46dd33c1a6bf1f4f
+  languageName: node
+  linkType: hard
+
+"vite-tsconfig-paths@npm:^4.3.1":
+  version: 4.3.1
+  resolution: "vite-tsconfig-paths@npm:4.3.1"
+  dependencies:
+    debug: "npm:^4.1.1"
+    globrex: "npm:^0.1.2"
+    tsconfck: "npm:^3.0.1"
+  peerDependencies:
+    vite: "*"
+  peerDependenciesMeta:
+    vite:
+      optional: true
+  checksum: 10c0/47d95952ebcf99e25aa35b6cf5522ae7d1314386d4baa84b6121128425c6337d43330ec8365070b27e1745278cbaad40728016f9dfde96b3d53f6113d30e1872
   languageName: node
   linkType: hard
 
