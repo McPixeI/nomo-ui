@@ -3,6 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/nomo-ui-umd.cjs",
+  "module": "dist/nomo-ui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/nomo-ui.js",
+      "require": "./dist/nomo-ui-umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -42,6 +53,7 @@
     "storybook": "^7.6.17",
     "typescript": "^5.2.2",
     "vite": "^5.1.4",
+    "vite-plugin-dts": "^3.7.3",
     "vite-tsconfig-paths": "^4.3.1"
   },
   "packageManager": "yarn@4.1.0"

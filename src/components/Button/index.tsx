@@ -1,11 +1,19 @@
-type ButtonProps = {
-  children: string;
-};
+import { VariantProps } from 'class-variance-authority';
+import { ComponentProps, forwardRef } from 'react';
+import { cn } from 'src/utils';
+import { buttonStyles } from './styles';
 
-export const Button = ({ children }: ButtonProps) => {
-  return (
-    <button className="bg-blue-500 text-gray-100 px-4 py-2 rounded-sm">
-      {children}
-    </button>
-  );
-};
+type ButtonProps = ComponentProps<'button'> & VariantProps<typeof buttonStyles>;
+
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ children, variant, size, colorscheme, className }, ref) => {
+    return (
+      <button
+        ref={ref}
+        className={cn(buttonStyles({ variant, size, colorscheme, className }))}
+      >
+        {children}
+      </button>
+    );
+  }
+);
