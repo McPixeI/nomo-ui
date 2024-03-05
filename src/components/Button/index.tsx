@@ -1,6 +1,7 @@
 import { VariantProps } from 'class-variance-authority';
 import { ComponentProps, forwardRef } from 'react';
-import { cn } from 'src/utils';
+
+import { cn } from '@/utils';
 import { buttonStyles } from './styles';
 
 type ButtonProps = ComponentProps<'button'> & VariantProps<typeof buttonStyles>;
