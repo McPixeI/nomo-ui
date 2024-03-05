@@ -3,4 +3,7 @@
 
 echo "running lint"
 yarn run lint
+echo "running tests"
+yarn run test --watch=false
+
 
