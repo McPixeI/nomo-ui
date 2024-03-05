@@ -1,9 +1,9 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo "running lint"
-yarn run lint
-echo "running tests"
-yarn run test --watch=false
+echo "running lint..."
+yarn lint
+echo "running tests..."
+yarn test-storybook
 
 
