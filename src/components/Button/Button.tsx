@@ -4,7 +4,7 @@ import { VariantProps } from 'class-variance-authority';
 import { cn } from '@/utils';
 import { ComponentProps, ReactNode } from 'react';
 import { NomoIcon } from '../NomoIcon';
-import { Spinner } from '../Spinner';
+import { Spinner } from '../ProgressIndicators/Spinner';
 import { buttonStyles } from './styles';
 
 

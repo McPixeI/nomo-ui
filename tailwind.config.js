@@ -52,7 +52,7 @@ export default {
           200: '#FFE0B5',
           500: '#FFB145'
         },
-        'grayscale': {
+        'greyscale': {
           0: '#FFFFFF',
           50: '#FAFAFA',
           100: '#F5F5F5',
