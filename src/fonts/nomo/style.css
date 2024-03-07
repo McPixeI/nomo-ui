@@ -1,0 +1,536 @@
+@font-face {
+  font-family: 'Nomo-Icon';
+  src: url('fonts/Nomo-Icon.eot?h6a4vq');
+  src: url('fonts/Nomo-Icon.eot?h6a4vq#iefix') format('embedded-opentype'),
+    url('fonts/Nomo-Icon.ttf?h6a4vq') format('truetype'), url('fonts/Nomo-Icon.woff?h6a4vq') format('woff'),
+    url('fonts/Nomo-Icon.svg?h6a4vq#Nomo-Icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Nomo-Icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.map-pin:before {
+  content: '\e900';
+}
+.product_purchasing:before {
+  content: '\e901';
+}
+.product_selling:before {
+  content: '\e902';
+}
+.sparkles:before {
+  content: '\e903';
+}
+.law:before {
+  content: '\e904';
+}
+.play:before {
+  content: '\e905';
+}
+.thk_checkbox:before {
+  content: '\e906';
+}
+.pause:before {
+  content: '\e907';
+}
+.save:before {
+  content: '\e908';
+}
+.Timer:before {
+  content: '\e909';
+}
+.folder-open:before {
+  content: '\e90a';
+}
+.forbidden:before {
+  content: '\e90b';
+}
+.error:before {
+  content: '\e90c';
+}
+.excel:before {
+  content: '\e90d';
+}
+.heart:before {
+  content: '\e90e';
+}
+.pipette:before {
+  content: '\e90f';
+}
+.rnd_tc:before {
+  content: '\e910';
+}
+.save_money:before {
+  content: '\e911';
+}
+.teams:before {
+  content: '\e912';
+}
+.transfer:before {
+  content: '\e913';
+}
+.sort:before {
+  content: '\e914';
+}
+.sort-desc:before {
+  content: '\e915';
+}
+.sort-asc:before {
+  content: '\e916';
+}
+.Import:before {
+  content: '\e917';
+}
+.repeat:before {
+  content: '\e918';
+}
+.convertir:before {
+  content: '\e919';
+}
+.change:before {
+  content: '\e91a';
+}
+.drop_ticket:before {
+  content: '\e91b';
+}
+.smartphone:before {
+  content: '\e91c';
+}
+.thk_history:before {
+  content: '\e91d';
+}
+.palette:before {
+  content: '\e91e';
+}
+.identidad:before {
+  content: '\e91f';
+}
+.firma:before {
+  content: '\e920';
+}
+.fingerprint:before {
+  content: '\e921';
+}
+.linkedin:before {
+  content: '\e922';
+}
+.thn_car:before {
+  content: '\e923';
+}
+.layout:before {
+  content: '\e924';
+}
+.thk_agenda:before {
+  content: '\e925';
+}
+.brush:before {
+  content: '\e926';
+}
+.thk_exit:before {
+  content: '\e927';
+}
+.thk_Tickets_Ingreso:before {
+  content: '\e928';
+}
+.thk_Tickets_Gasto:before {
+  content: '\e929';
+}
+.thn_moneyup:before {
+  content: '\e92a';
+}
+.thk_mundo:before {
+  content: '\e92b';
+}
+.thk_type:before {
+  content: '\e92c';
+}
+.thk_colors:before {
+  content: '\e92d';
+}
+.thk_Gestor:before {
+  content: '\e92e';
+}
+.thk_negocio:before {
+  content: '\e92f';
+}
+.activities:before {
+  content: '\e930';
+}
+.documentos_comerciales:before {
+  content: '\e931';
+}
+.thk_Facturas_Ingreso:before {
+  content: '\e932';
+}
+.thk_Facturas_Gasto:before {
+  content: '\e933';
+}
+.thk_Proveedores:before {
+  content: '\e934';
+}
+.thk_Nominas:before {
+  content: '\e935';
+}
+.thk_Presupuestos:before {
+  content: '\e936';
+}
+.thk_openpad:before {
+  content: '\e937';
+}
+.thk_phone:before {
+  content: '\e938';
+}
+.zoom_in:before {
+  content: '\e939';
+}
+.zoom_out:before {
+  content: '\e93a';
+}
+.thk_borrador:before {
+  content: '\e93b';
+}
+.thk_factura:before {
+  content: '\e93c';
+}
+.rnd_feedback:before {
+  content: '\e93d';
+}
+.rnd_star:before {
+  content: '\e93e';
+}
+.rnd_faqs:before {
+  content: '\e93f';
+}
+.rnd_blog:before {
+  content: '\e940';
+}
+.rnd_twitter:before {
+  content: '\e941';
+}
+.rnd_facebook:before {
+  content: '\e942';
+}
+.rnd_arrow_up:before {
+  content: '\e943';
+}
+.rnd_instagram:before {
+  content: '\e944';
+}
+.thn_speaker:before {
+  content: '\e945';
+}
+.thk_download:before {
+  content: '\e946';
+}
+.thn_view_on:before {
+  content: '\e947';
+}
+.thn_view_off:before {
+  content: '\e948';
+}
+.thn_umbrella:before {
+  content: '\e949';
+}
+.thn_tools:before {
+  content: '\e94a';
+}
+.thn_devices:before {
+  content: '\e94b';
+}
+.oth_star:before {
+  content: '\e94c';
+}
+.thn_pdf:before {
+  content: '\e94d';
+}
+.thn_card:before {
+  content: '\e94e';
+}
+.thk_camera:before {
+  content: '\e94f';
+}
+.thk_external-link:before {
+  content: '\e950';
+}
+.thn_bag:before {
+  content: '\e951';
+}
+.thn_arrow_left:before {
+  content: '\e952';
+}
+.thn_arrow_right:before {
+  content: '\e953';
+}
+.thn_arrow_up:before {
+  content: '\e954';
+}
+.thn_accident:before {
+  content: '\e955';
+}
+.thk_options:before {
+  content: '\e956';
+}
+.thn_client_KO:before {
+  content: '\e957';
+}
+.thn_client:before {
+  content: '\e958';
+}
+.thk_refresh:before {
+  content: '\e959';
+}
+.series:before {
+  content: '\e95a';
+}
+.thk_menu:before {
+  content: '\e95b';
+}
+.thk_calendar:before {
+  content: '\e95c';
+}
+.thk_help:before {
+  content: '\e95d';
+}
+.thk_padlock:before {
+  content: '\e95e';
+}
+.thk_exclamation:before {
+  content: '\e95f';
+}
+.thk_info:before {
+  content: '\e960';
+}
+.thk_graphic:before {
+  content: '\e961';
+}
+.thk_gift:before {
+  content: '\e962';
+}
+.thk_profile:before {
+  content: '\e963';
+}
+.thk_expense:before {
+  content: '\e964';
+}
+.thk_duplicate:before {
+  content: '\e965';
+}
+.thk_dots:before {
+  content: '\e966';
+}
+.thk_danger:before {
+  content: '\e967';
+}
+.thk_close:before {
+  content: '\e968';
+}
+.thn_mail_send:before {
+  content: '\e969';
+}
+.thn_mail_ok:before {
+  content: '\e96a';
+}
+.thk_mail:before {
+  content: '\e96b';
+}
+.thk_mail_notification:before {
+  content: '\e96c';
+}
+.thk_logout:before {
+  content: '\e96d';
+}
+.thk_loader:before {
+  content: '\e96e';
+}
+.thk_list:before {
+  content: '\e96f';
+}
+.thk_edit:before {
+  content: '\e970';
+}
+.thk_upload:before {
+  content: '\e971';
+}
+.thk_link:before {
+  content: '\e972';
+}
+.thk_unlink:before {
+  content: '\e973';
+}
+.thk_time:before {
+  content: '\e974';
+}
+.fit_viewport:before {
+  content: '\e975';
+}
+.thn_manual:before {
+  content: '\e976';
+}
+.thk_settings:before {
+  content: '\e977';
+}
+.thk_search:before {
+  content: '\e978';
+}
+.thk_circular_indicator:before {
+  content: '\e979';
+}
+.thk_radio_ok_black:before {
+  content: '\e97a';
+}
+.thk_flash_off:before {
+  content: '\e97b';
+}
+.thk_filter:before {
+  content: '\e97c';
+}
+.thk_tickets:before {
+  content: '\e97d';
+}
+.thk_check:before {
+  content: '\e97e';
+}
+.thk_chat:before {
+  content: '\e97f';
+}
+.thk_btn_open:before {
+  content: '\e980';
+}
+.thn_arrow_down:before {
+  content: '\e981';
+}
+.thk_Productos:before {
+  content: '\e982';
+}
+.thk_diamond:before {
+  content: '\e983';
+}
+.thk_scanner_gasto:before {
+  content: '\e984';
+}
+.thk_scanner_venta:before {
+  content: '\e985';
+}
+.thk_scanner:before {
+  content: '\e986';
+}
+.thn_graduationcap:before {
+  content: '\e987';
+}
+.thn_wallet:before {
+  content: '\e988';
+}
+.thn_photo:before {
+  content: '\e989';
+}
+.thn_bank:before {
+  content: '\e98a';
+}
+.thk_export:before {
+  content: '\e98b';
+}
+.thk_delete:before {
+  content: '\e98c';
+}
+.thk_all:before {
+  content: '\e98d';
+}
+.thk_flash_on:before {
+  content: '\e98e';
+}
+.thk_back:before {
+  content: '\e98f';
+}
+.thn_taxes:before {
+  content: '\e990';
+}
+.thk_euro:before {
+  content: '\e991';
+}
+.oth_dropdown:before {
+  content: '\e992';
+}
+.rotate:before {
+  content: '\e993';
+}
+.corner-down-right:before {
+  content: '\e994';
+}
+.mails:before {
+  content: '\e995';
+}
+.folder-closed:before {
+  content: '\e996';
+}
+.folder-new:before {
+  content: '\e997';
+}
+.folder-search:before {
+  content: '\e998';
+}
+.tasks:before {
+  content: '\e999';
+}
+.open_in_app:before {
+  content: '\e99a';
+}
+.folder-input:before {
+  content: '\e99b';
+}
+.power-off:before {
+  content: '\e99c';
+}
+.folder-down:before {
+  content: '\e99d';
+}
+.folder-up:before {
+  content: '\e99e';
+}
+.Align-center:before {
+  content: '\e99f';
+}
+.Align-left:before {
+  content: '\e9a0';
+}
+.Align-right:before {
+  content: '\e9a1';
+}
+.Attachment:before {
+  content: '\e9a2';
+}
+.Bold:before {
+  content: '\e9a3';
+}
+.bookmark_fill:before {
+  content: '\e9a4';
+}
+.bookmark:before {
+  content: '\e9a5';
+}
+.Italic:before {
+  content: '\e9a6';
+}
+.Remesas:before {
+  content: '\e9a7';
+}
+.Text-size:before {
+  content: '\e9a8';
+}
+.Underline:before {
+  content: '\e9a9';
+}

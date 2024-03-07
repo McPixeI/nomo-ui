@@ -2,12 +2,13 @@
 import { VariantProps } from 'class-variance-authority';
 
 import { cn } from '@/utils';
-import { ReactNode } from 'react';
+import { ComponentProps, ReactNode } from 'react';
+import { NomoIcon } from '../NomoIcon';
 import { Spinner } from '../Spinner';
 import { buttonStyles } from './styles';
 
 
-// type IconAlignment = 'left' | 'right' | undefined // TODO
+type IconAlignment = 'left' | 'right' 
 
 type ButtonVariants = VariantProps<typeof buttonStyles>;
  
@@ -18,12 +19,11 @@ interface ButtonProps extends ButtonVariants {
   type?: 'submit' | 'reset' | 'button' | undefined
   isLoading?: boolean
   className?: string
-  //iconName?: ComponentProps<typeof NomoIcon>['name'] // TODO
-  //iconAlignment?: IconAlignment // TODO
+  icon?: {name: ComponentProps<typeof NomoIcon>['name'] , alignment?: IconAlignment}
 }
 
 
-const Button = ({ variant, size, children, className, type, disabled, isLoading, onClick }: ButtonProps) => {
+const Button = ({ variant, size, children, className, type, disabled, isLoading, onClick, icon }: ButtonProps) => {
   return (
     <button
       className={cn(buttonStyles({ variant, size, className }))}
@@ -31,16 +31,11 @@ const Button = ({ variant, size, children, className, type, disabled, isLoading,
       disabled={disabled || isLoading}
       onClick={onClick}
     >
-
-      <span className={`flex items-center justify-center ${isLoading ? 'invisible' : 'visible'}`}>
-        {/*         {!!iconName && iconAlignment === 'left' && <NomoIcon name={iconName} className="mr-3 text-[22px]" />}*/}        
+      <span className={`flex gap-3 items-center justify-center ${isLoading ? 'invisible' : 'visible'} ${icon?.alignment === 'right' ? 'flex-row-reverse' : 'flex-row'}`}>
+        {!!icon?.name && <NomoIcon name={icon.name} className="text-[22px]" />}       
         {children}
-        {/*         {!!iconName && iconAlignment === 'right' && <NomoIcon name={iconName} className="ml-3 text-[22px]" />} */}     
       </span>
-
       {isLoading && <Spinner size="small" className='absolute' />}
-
-
     </button>
   );
 }
