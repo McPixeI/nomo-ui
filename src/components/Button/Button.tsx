@@ -3,6 +3,7 @@ import { VariantProps } from 'class-variance-authority';
 
 import { cn } from '@/utils';
 import { ReactNode } from 'react';
+import { Spinner } from '../Spinner';
 import { buttonStyles } from './styles';
 
 
@@ -22,12 +23,24 @@ interface ButtonProps extends ButtonVariants {
 }
 
 
-const Button = ({ children, variant, size, className, type, disabled, isLoading, onClick }: ButtonProps) => {
+const Button = ({ variant, size, children, className, type, disabled, isLoading, onClick }: ButtonProps) => {
   return (
     <button
       className={cn(buttonStyles({ variant, size, className }))}
+      type={type}
+      disabled={disabled || isLoading}
+      onClick={onClick}
     >
-      {children}
+
+      <span className={`flex items-center justify-center ${isLoading ? 'invisible' : 'visible'}`}>
+        {/*         {!!iconName && iconAlignment === 'left' && <NomoIcon name={iconName} className="mr-3 text-[22px]" />}*/}        
+        {children}
+        {/*         {!!iconName && iconAlignment === 'right' && <NomoIcon name={iconName} className="ml-3 text-[22px]" />} */}     
+      </span>
+
+      {isLoading && <Spinner size="small" className='absolute' />}
+
+
     </button>
   );
 }

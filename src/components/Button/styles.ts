@@ -1,7 +1,18 @@
 import { cva } from 'class-variance-authority';
 
 export const buttonStyles = cva(
-  ['border-2', 'uppercase', 'w-full', 'rounded-full', 'font-semibold', 'focus:outline-none', 'focus:border-secondary-500'],
+  [
+    'relative', 
+    'flex items-center justify-center', 
+    'transition	duration-150 ease-linear',
+    'border-2', 
+    'uppercase', 
+    'w-full', 
+    'rounded-full', 
+    'font-semibold', 
+    'focus:outline-none', 
+    'focus:border-secondary-500'
+  ],
   {
     variants: {
       variant: {
