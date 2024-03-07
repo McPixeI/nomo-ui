@@ -52,8 +52,8 @@ export const buttonStyles = cva(
         ]
       },
       size: {
-        small: 'px-m py-xs text-sm',
-        medium: 'px-m py-xs text-base'
+        small: 'px-m py-[10px] text-sm',
+        medium: 'px-m py-[10px] text-base'
       }
     },
     defaultVariants: {
