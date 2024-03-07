@@ -23,13 +23,14 @@ interface ButtonProps extends ButtonVariants {
 }
 
 
-const Button = ({ variant, size, children, className, type, disabled, isLoading, onClick, icon }: ButtonProps) => {
+const Button = ({ variant, size, children, className, type='button', disabled, isLoading, onClick, icon }: ButtonProps) => {
   return (
     <button
       className={cn(buttonStyles({ variant, size, className }))}
       type={type}
       disabled={disabled || isLoading}
       onClick={onClick}
+      aria-label={typeof children === 'string' ? children : ' '} //NOTE: For a11y
     >
       <span className={`flex gap-3 items-center justify-center ${isLoading ? 'invisible' : 'visible'} ${icon?.alignment === 'right' ? 'flex-row-reverse' : 'flex-row'}`}>
         {!!icon?.name && <NomoIcon name={icon.name} className="text-[22px]" />}       
