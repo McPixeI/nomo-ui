@@ -20,8 +20,8 @@ export const Primary: Story = {
   args: {
     children: 'Primary icon left',
     variant: 'primary',
-    icon: { name: 'thk_btn_open' }
-
+    iconLeft:'map-pin',
+    className: ''
   },
 };
 
@@ -29,7 +29,9 @@ export const Secondary: Story = {
   args: {
     children: 'Secondary icon right',
     variant: 'secondary',
-    icon: { name: 'map-pin', alignment: 'right'}
+    iconRight:'map-pin',
+    className: ''
+
   },
 };
 
@@ -37,6 +39,7 @@ export const Tertiary: Story = {
   args: {
     children: 'Tertiary button',
     variant: 'tertiary',
+    className: ''
   },
 };
 
@@ -44,5 +47,6 @@ export const FAB: Story = {
   args: {
     children: <NomoIcon name="thk_btn_open" className="text-[22px]" />,
     variant: 'fab',
+    className: ''
   },
 };

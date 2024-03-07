@@ -8,8 +8,6 @@ import { Spinner } from '../Spinner';
 import { buttonStyles } from './styles';
 
 
-type IconAlignment = 'left' | 'right' 
-
 type ButtonVariants = VariantProps<typeof buttonStyles>;
  
 interface ButtonProps extends ButtonVariants {
@@ -19,22 +17,24 @@ interface ButtonProps extends ButtonVariants {
   type?: 'submit' | 'reset' | 'button' | undefined
   isLoading?: boolean
   className?: string
-  icon?: {name: ComponentProps<typeof NomoIcon>['name'] , alignment?: IconAlignment}
+  iconLeft?: ComponentProps<typeof NomoIcon>['name'],
+  iconRight?: ComponentProps<typeof NomoIcon>['name']
 }
 
 
-const Button = ({ variant, size, children, className, type='button', disabled, isLoading, onClick, icon }: ButtonProps) => {
+const Button = ({ variant, size, children, className, type='button', disabled, isLoading, onClick, iconLeft, iconRight }: ButtonProps) => {
   return (
     <button
       className={cn(buttonStyles({ variant, size, className }))}
       type={type}
       disabled={disabled || isLoading}
       onClick={onClick}
-      aria-label={typeof children === 'string' ? children : ' '} //NOTE: For a11y
+      aria-label={typeof children === 'string' ? children : type} //NOTE: For a11y
     >
-      <span className={`flex gap-3 items-center justify-center ${isLoading ? 'invisible' : 'visible'} ${icon?.alignment === 'right' ? 'flex-row-reverse' : 'flex-row'}`}>
-        {!!icon?.name && <NomoIcon name={icon.name} className="text-[22px]" />}       
+      <span className={`flex gap-3 items-center justify-center ${isLoading ? 'invisible' : 'visible'} `}>
+        {!!iconLeft && <NomoIcon name={iconLeft} className="text-[22px]" />}       
         {children}
+        {!!iconRight && <NomoIcon name={iconRight} className="text-[22px]" />}       
       </span>
       {isLoading && <Spinner size="small" className='absolute' />}
     </button>
