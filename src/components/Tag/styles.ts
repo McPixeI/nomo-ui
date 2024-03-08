@@ -7,8 +7,10 @@ export const tagStyles = cva(
     'items-center',
     'rounded-[4px]',
     'p-[4px]',
+    'h-6',
     'text-highlight',
-    'uppercase'
+    'uppercase',
+    '[&>i]:text-[16px]'
   ],
   {
     variants: {
