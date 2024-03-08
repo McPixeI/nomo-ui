@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import { NomoIcon } from '..';
 import Tag from './Tag';
 
 
@@ -15,51 +16,66 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Neutral: Story = {
-  args: {
-    variant: 'neutral',
-    children: 'Neutral'
-  },
+
+export const Neutral: Story  ={
+  render: () => (
+    <div className='flex gap-6'>
+      <Tag variant="neutral" >Neutral</Tag>
+      <Tag variant="neutral" ><NomoIcon name='thk_info'/></Tag>
+    </div>
+  )
 };
 
 export const Notice: Story = {
-  args: {
-    variant: 'notice',
-    children: 'Notice'
-  },
+  render: () => (
+    <div className='flex gap-6'>
+      <Tag variant="notice" >Neutral</Tag>
+      <Tag variant="notice" ><NomoIcon name='thk_danger'/></Tag>
+    </div>
+  )
 };
 
 export const Positive: Story = {
-  args: {
-    variant: 'positive',
-    children: 'Positive'
-  },
+  render: () => (
+    <div className='flex gap-6'>
+      <Tag variant="positive" >Neutral</Tag>
+      <Tag variant="positive" ><NomoIcon name='thk_radio_ok_black'/></Tag>
+    </div>
+  )
 };
 
 export const Negative: Story = {
-  args: {
-    variant: 'negative',
-    children: 'Negative'
-  },
+  render: () => (
+    <div className='flex gap-6'>
+      <Tag variant="negative" >Neutral</Tag>
+      <Tag variant="negative" ><NomoIcon name='error'/></Tag>
+    </div>
+  )
 };
 
 export const Highlight1: Story = {
-  args: {
-    variant: 'highlight1',
-    children: 'Highlight1'
-  },
+  render: () => (
+    <div className='flex gap-6'>
+      <Tag variant="highlight1" >Highlight1</Tag>
+      <Tag variant="highlight1" ><NomoIcon name='thk_info'/></Tag>
+    </div>
+  )
 };
 
 export const Highlight2: Story = {
-  args: {
-    variant: 'highlight2',
-    children: 'Highlight2'
-  },
+  render: () => (
+    <div className='flex gap-6'>
+      <Tag variant="highlight2" >Highlight2</Tag>
+      <Tag variant="highlight2" ><NomoIcon name='thk_info'/></Tag>
+    </div>
+  )
 };
 
 export const Highlight3: Story = {
-  args: {
-    variant: 'highlight3',
-    children: 'Highlight3'
-  },
+  render: () => (
+    <div className='flex gap-6'>
+      <Tag variant="highlight3" >Highlight3</Tag>
+      <Tag variant="highlight3" ><NomoIcon name='thk_info'/></Tag>
+    </div>
+  )
 }; 

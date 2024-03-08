@@ -8,7 +8,7 @@ import { tagStyles } from './styles';
 type TagVariants = VariantProps<typeof tagStyles>;
 
 interface TagProps extends TagVariants {
-  className: string
+  className?: string
   children: ReactNode | string
 }
 
