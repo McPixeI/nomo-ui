@@ -1,5 +1,17 @@
+@import url('./fonts/nunito-sans/style.css');
 @import url('./fonts/nomo/style.css');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Nomo-Icon';
+  src: url('fonts/Nomo-Icon.eot?h6a4vq');
+  src: url('fonts/Nomo-Icon.eot?h6a4vq#iefix') format('embedded-opentype'),
+    url('fonts/Nomo-Icon.ttf?h6a4vq') format('truetype'), url('fonts/Nomo-Icon.woff?h6a4vq') format('woff'),
+    url('fonts/Nomo-Icon.svg?h6a4vq#Nomo-Icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
