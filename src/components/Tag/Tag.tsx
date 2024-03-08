@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 
-import { cn } from '@/utils';
+import { cn } from '@/utils/tailwind-config/tailwind-merge';
 import { VariantProps } from 'class-variance-authority';
 import { tagStyles } from './styles';
 

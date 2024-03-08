@@ -1,7 +1,7 @@
 
 import { VariantProps } from 'class-variance-authority';
 
-import { cn } from '@/utils';
+import { cn } from '@/utils/tailwind-config/tailwind-merge';
 import { ComponentProps, ReactNode } from 'react';
 import { NomoIcon } from '../NomoIcon';
 import { Spinner } from '../ProgressIndicators/Spinner';
@@ -36,7 +36,7 @@ const Button = ({ variant, size, children, className, type='button', disabled, i
         {children}
         {!!iconRight && <NomoIcon name={iconRight} className="text-[22px]" />}       
       </span>
-      {isLoading && <Spinner size="small" className='absolute' />}
+      {isLoading && <Spinner size="s" className='absolute' />}
     </button>
   );
 }

@@ -18,6 +18,6 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     variant: 'default',
-    children: <p>asdfasdf</p>
+    children: <p>Whereas recognition of the inherent dignity</p>
   },
 };

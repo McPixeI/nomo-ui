@@ -1,4 +1,4 @@
-import { cn } from '@/utils'
+import { cn } from '@/utils/tailwind-config/tailwind-merge'
 import { VariantProps } from 'class-variance-authority'
 import { ReactNode } from 'react'
 import { cardStyles } from './styles'

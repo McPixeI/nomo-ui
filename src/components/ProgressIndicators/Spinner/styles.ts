@@ -11,13 +11,13 @@ export const spinnerStyles = cva(
   ], {
     variants: {
       size: {
-        small: 'size-[18px] border-[2px]',
-        medium: 'size-[24px] border-[3px]',
-        large: 'size-[48px] border-[4px]'
+        s: 'size-[18px] border-[2px]',
+        m: 'size-[24px] border-[3px]',
+        l: 'size-[48px] border-[4px]'
       }
     },
     defaultVariants: {
-      size: 'small'
+      size: 's'
     },
   }
 );
