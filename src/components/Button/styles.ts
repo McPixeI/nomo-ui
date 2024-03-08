@@ -11,7 +11,7 @@ export const buttonStyles = cva(
     'uppercase', 
     'rounded-full', 
     'focus:outline-none', 
-    'focus:border-secondary-500'
+    'focus:border-secondary-500 focus:border-2',
   ],
   {
     variants: {
@@ -20,7 +20,7 @@ export const buttonStyles = cva(
           'bg-primary-900',
           'text-white',
           'hover:bg-primary-600',
-          'focus:bg-primary-900 focus:border-2',
+          'focus:bg-primary-900',
           'active:bg-primary-700',
           'disabled:bg-primary-300'
         ],
@@ -29,7 +29,7 @@ export const buttonStyles = cva(
           'border-primary-900',
           'text-primary-900',
           'hover:bg-primary-200',
-          'focus:bg-primary-100 focus:border-2',
+          'focus:bg-primary-100',
           'active:bg-primary-300 disabled:border-primary-300'
         ],
         tertiary: [
