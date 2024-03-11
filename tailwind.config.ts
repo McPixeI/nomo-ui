@@ -1,7 +1,10 @@
+import { animation } from './src/utils/tailwind-config/semantics/animation';
 import { colors } from './src/utils/tailwind-config/semantics/colors';
 import { fontSize } from './src/utils/tailwind-config/semantics/font-size';
+import { keyframes } from './src/utils/tailwind-config/semantics/keyframes';
 import { screens } from './src/utils/tailwind-config/semantics/screens';
 import { spacing } from './src/utils/tailwind-config/semantics/spacing';
+
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -14,7 +17,9 @@ export default {
       },
       fontSize: fontSize,
       colors: colors,
-      spacing: spacing
+      spacing: spacing,
+      keyframes: keyframes,
+      animation: animation
     },
   },
   plugins: [
